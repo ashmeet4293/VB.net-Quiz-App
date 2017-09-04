@@ -1,0 +1,334 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{6BBB9D7F-7EE2-42A1-BD7C-E5BD5A831BD9}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>QuizProject.My.MyApplication</StartupObject>
+    <RootNamespace>QuizProject</RootNamespace>
+    <AssemblyName>QuizProject</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>QuizProject.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>QuizProject.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AdminChangePasswordForm.Designer.vb">
+      <DependentUpon>AdminChangePasswordForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AdminChangePasswordForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminLoginForm.Designer.vb">
+      <DependentUpon>AdminLoginForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AdminLoginForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminMenuForm.Designer.vb">
+      <DependentUpon>AdminMenuForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AdminMenuForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ContestantChangePasswordForm.Designer.vb">
+      <DependentUpon>ContestantChangePasswordForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ContestantChangePasswordForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ContestantLoginForm.Designer.vb">
+      <DependentUpon>ContestantLoginForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ContestantLoginForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ContestantMenuForm.Designer.vb">
+      <DependentUpon>ContestantMenuForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ContestantMenuForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GamingForm.Designer.vb">
+      <DependentUpon>GamingForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="GamingForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PlayerDeletionForm.Designer.vb">
+      <DependentUpon>PlayerDeletionForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PlayerDeletionForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PlayerRegistrationForm.Designer.vb">
+      <DependentUpon>PlayerRegistrationForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PlayerRegistrationForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PlayerUpdateForm.Designer.vb">
+      <DependentUpon>PlayerUpdateForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PlayerUpdateForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QuestionDeletionForm.Designer.vb">
+      <DependentUpon>QuestionDeletionForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="QuestionDeletionForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QuestionRegistrationForm.Designer.vb">
+      <DependentUpon>QuestionRegistrationForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="QuestionRegistrationForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QuestionUpdateForm.Designer.vb">
+      <DependentUpon>QuestionUpdateForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="QuestionUpdateForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReportForm.Designer.vb">
+      <DependentUpon>ReportForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ReportForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ResultForm.Designer.vb">
+      <DependentUpon>ResultForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ResultForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserSelectionForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserSelectionForm.Designer.vb">
+      <DependentUpon>UserSelectionForm.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="AdminChangePasswordForm.resx">
+      <DependentUpon>AdminChangePasswordForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminLoginForm.resx">
+      <DependentUpon>AdminLoginForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminMenuForm.resx">
+      <DependentUpon>AdminMenuForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ContestantChangePasswordForm.resx">
+      <DependentUpon>ContestantChangePasswordForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ContestantLoginForm.resx">
+      <DependentUpon>ContestantLoginForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ContestantMenuForm.resx">
+      <DependentUpon>ContestantMenuForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GamingForm.resx">
+      <DependentUpon>GamingForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PlayerDeletionForm.resx">
+      <DependentUpon>PlayerDeletionForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PlayerRegistrationForm.resx">
+      <DependentUpon>PlayerRegistrationForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PlayerUpdateForm.resx">
+      <DependentUpon>PlayerUpdateForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QuestionDeletionForm.resx">
+      <DependentUpon>QuestionDeletionForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QuestionRegistrationForm.resx">
+      <DependentUpon>QuestionRegistrationForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QuestionUpdateForm.resx">
+      <DependentUpon>QuestionUpdateForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportForm.resx">
+      <DependentUpon>ReportForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ResultForm.resx">
+      <DependentUpon>ResultForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserSelectionForm.resx">
+      <DependentUpon>UserSelectionForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\UserType.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Background7.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\User.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Lock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Key.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Player.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AddPlayer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DeletePlayers.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\UpdatePlayers.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Questions.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AddQuestion.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DeleteQuestions.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\UpdateQuestions.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Result.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Exit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Report.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Game.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GamePlay.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Help.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Instruction.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\About.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Tulip.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CorrectAnswer.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
